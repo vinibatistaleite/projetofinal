@@ -1,6 +1,7 @@
 //importar react
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import vida from '../img/vida.png'
 
 //declarar variaveis
 let animationFrameStatus;
@@ -24,7 +25,10 @@ class Game extends React.Component {
             itemOffset: 0,
             lifes: 400,
             items: {
-                item1: {bottom: 20, left: 300, touched: false},
+                item1: {
+                    bottom: 20, 
+                    left: 300, 
+                    touched: false},
                 item2: {bottom: 20, left: 600, touched: false},
                 item3: {bottom: 40, left: 900, touched: false},
                 item4: {bottom: 20, left: 1200, touched: false},
@@ -181,6 +185,9 @@ class Game extends React.Component {
                     <h4 style={{margin: '5px 0'}}>Pontuação: {this.state.score}</h4>
                     <p>BgOffset: {this.state.bgOffset}</p>
                     <p>floorOffset: {this.state.floorOffset}</p>
+                    <img src={vida}></img>
+                    <img src={vida}></img>
+                    <img src={vida}></img>
                     <p>Vida: {this.state.lifes}</p>
                 </div>
             </div>
